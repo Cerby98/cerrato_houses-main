@@ -1,0 +1,70 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #c89a5b;
+    --secondary-color: #312d2e;
+    --tertiary-color: #f2f2f2;
+
+    --mobile-padding-inline: 2rem;
+    --desktop-padding-inline: 7.5rem;
+
+    --ff: 'Montserrat', sans-serif;
+
+    --fs-sm: 0.75rem; /* 12px */
+    --fs-base: 0.875rem; /* 14px */
+    --fs-md: 1rem; /* 16px */
+    --fs-lg: 1.125rem; /* 18px */
+    --fs-xl: 1.375rem; /* 22px */
+    --fs-xxl: 1.75rem; /* 28px */
+
+    --max-w: 1300px;
+}
+
+body {
+    font-family: var(--ff);
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: var(--tertiary-color);
+}
+
+small {
+    font-size: var(--fs-sm);
+    font-weight: 300;
+}
+
+h1 {
+    font-size: var(--fs-xxl);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: var(--fs-xl);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: var(--fs-lg);
+    font-weight: 500;
+}
+
+p {
+    font-size: var(--fs-base);
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --fs-sm: 0.875rem; /* 14px */
+        --fs-base: 1rem; /* 16px */
+        --fs-md: 1.125rem; /* 18px */
+        --fs-lg: 1.375rem; /* 22px */
+        --fs-xl: 1.75rem; /* 28px */
+        --fs-xxl: 2.25rem; /* 36px */
+    }
+
+    #app {
+        overflow: hidden;
+    }
+}
